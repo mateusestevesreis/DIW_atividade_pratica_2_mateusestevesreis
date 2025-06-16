@@ -1,0 +1,346 @@
+:root {
+    --primary-color: #092C4C;
+    --secondary-color: #265289;
+    --accent-color: #B5CCE5;
+    --light-color: #DBDBDB;
+    --dark-color: #333333;
+    --text-color: #333333;
+    --text-light: #FFFFFF;
+    --error-color: #dc3545;
+    --success-color: #28a745;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --primary-color: #265289;
+    --secondary-color: #092C4C;
+    --light-color: #333333;
+    --dark-color: #DBDBDB;
+    --text-color: #FFFFFF;
+    --text-light: #333333;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    transition: all 0.3s ease;
+    padding-top: 70px; /* Para compensar o header fixo */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+/* Header */
+.header {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+#dark-mode-toggle, #accessibility-btn {
+    color: var(--text-light);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 3rem 0;
+}
+
+.carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 5px;
+    bottom: 2rem;
+}
+
+/* Search Section */
+.search-section {
+    padding: 2rem 0;
+    background-color: rgba(var(--secondary-color), 0.05);
+}
+
+.search-box {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Destinos Section */
+.destinations-section {
+    padding: 3rem 0;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    height: 100%;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.destination-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.destination-body {
+    padding: 1.25rem;
+}
+
+.destination-title {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.destination-location {
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.destination-price {
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.destination-rating .stars {
+    color: #FFD700;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.favorite-btn i {
+    font-size: 1.2rem;
+    color: var(--error-color);
+}
+
+.favorite-btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+/* Ratings Section */
+.ratings-section {
+    padding: 3rem 0;
+    background-color: var(--accent-color);
+}
+
+.chart-container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-section {
+    padding: 3rem 0;
+    background: white;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--accent-color);
+}
+
+.social-links .btn {
+    transition: all 0.3s ease;
+}
+
+.social-links .btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer a {
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Accessibility */
+.accessibility-mode {
+    font-size: 18px;
+}
+
+.accessibility-mode .nav-link {
+    padding: 12px 20px !important;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .carousel-img {
+        height: 400px;
+    }
+    
+    .destination-card {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 35px;
+    }
+    
+    .carousel-img {
+        height: 300px;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .search-box {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    .carousel-img {
+        height: 250px;
+    }
+    
+    .carousel-caption {
+        bottom: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    
+    .destination-img {
+        height: 180px;
+    }
+}
+
+/* Efeitos de transição para Dark Mode */
+.header, .footer, .btn-primary, .btn-outline-primary {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-link, #dark-mode-toggle, #accessibility-btn, .footer a {
+    transition: color 0.3s ease;
+}
+
+.destination-card, .chart-container, .auth-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}

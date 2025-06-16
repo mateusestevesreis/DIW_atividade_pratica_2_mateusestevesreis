@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | AERONAUTAS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Mesmo header do index.html -->
+    </header>
+
+    <main class="main-content auth-page">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="auth-card">
+                        <div class="auth-header">
+                            <h2>Crie sua conta</h2>
+                            <p>Junte-se a nós e comece a planejar suas próximas aventuras</p>
+                        </div>
+                        <form id="register-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="register-firstname">Primeiro Nome</label>
+                                        <input type="text" class="form-control" id="register-firstname" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="register-lastname">Sobrenome</label>
+                                        <input type="text" class="form-control" id="register-lastname" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-username">Nome de Usuário</label>
+                                <input type="text" class="form-control" id="register-username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-email">E-mail</label>
+                                <input type="email" class="form-control" id="register-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-password">Senha</label>
+                                <input type="password" class="form-control" id="register-password" required>
+                                <small class="form-text text-muted">Mínimo de 8 caracteres</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-confirm-password">Confirme sua Senha</label>
+                                <input type="password" class="form-control" id="register-confirm-password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-profile-pic">Foto de Perfil (Opcional)</label>
+                                <input type="file" class="form-control-file" id="register-profile-pic">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="register-terms" required>
+                                <label class="form-check-label" for="register-terms">Eu concordo com os <a href="politica_termos.html">Termos de Uso</a> e <a href="politica_termos.html">Política de Privacidade</a></label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+                            <div class="auth-footer">
+                                <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Mesmo footer do index.html -->
+    </footer>
+
+    <script src="./assets/scripts/cadastro.js"></script>
+    <!-- Mesmos scripts do index.html -->
+</body>
+</html>

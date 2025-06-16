@@ -1,0 +1,256 @@
+{
+  "usuarios": [
+    {
+      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@aeronautas.com",
+      "admin": true,
+      "favoritos": [1, 3],
+      "dataCadastro": "2025-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+      "login": "usuario",
+      "senha": "123",
+      "nome": "Usuário Comum",
+      "email": "usuario@aeronautas.com",
+      "admin": false,
+      "favoritos": [2, 4],
+      "dataCadastro": "2025-01-01T00:00:00.000Z"
+    }
+  ],
+  "destinos": [
+    {
+      "id": 1,
+      "nome": "Rio de Janeiro",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ",
+      "pais": "Brasil",
+      "preco": 2499.99,
+      "descricao": "O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor, no topo do Corcovado, e pelo Pão de Açúcar, um pico de granito com teleféricos até seu cume. A cidade também é conhecida pelas grandes favelas. O empolgante Carnaval, com carros alegóricos, fantasias extravagantes e sambistas, é considerado o maior do mundo.",
+      "descricaoCurta": "A Cidade Maravilhosa com suas praias icônicas e paisagens deslumbrantes.",
+      "imagem": "fotoriodejaneiro.png",
+      "destaque": true,
+      "visitado": false,
+      "avaliacoes": [
+        {
+          "nome": "João",
+          "rating": 5,
+          "comentario": "Experiência incrível! As praias são maravilhosas.",
+          "data": "2025-03-15T00:00:00.000Z"
+        },
+        {
+          "nome": "Maria",
+          "rating": 4,
+          "comentario": "Adorei o Cristo Redentor, mas a cidade está muito cheia.",
+          "data": "2025-04-20T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Paris",
+      "cidade": "Paris",
+      "pais": "França",
+      "preco": 3599.99,
+      "descricao": "Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e cultura. Sua paisagem urbana do século XIX é cortada por avenidas largas e pelo rio Sena. A cidade é conhecida por monumentos como a Torre Eiffel e a Catedral de Notre-Dame, uma construção gótica do século XII, sendo famosa também pela cultura dos cafés e por lojas de estilistas famosos na Rue du Faubourg Saint-Honoré.",
+      "descricaoCurta": "A Cidade Luz, romântica e cheia de história e cultura.",
+      "imagem": "fotoparis.png",
+      "destaque": true,
+      "visitado": true,
+      "avaliacoes": [
+        {
+          "nome": "Carlos",
+          "rating": 5,
+          "comentario": "Paris é tudo que dizem e mais um pouco! Torre Eiffel é incrível à noite.",
+          "data": "2025-02-10T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Havaí",
+      "cidade": "Honolulu",
+      "estado": "Havaí",
+      "pais": "Estados Unidos",
+      "preco": 4999.99,
+      "descricao": "O Havaí é um estado dos EUA que é um arquipélago vulcânico isolado no Pacífico Central. Suas ilhas são famosas por suas paisagens acidentadas compostas de penhascos, cachoeiras, florestas tropicais e praias com areia dourada, vermelha, preta e até verde. Das 6 ilhas principais, Oahu tem a maior cidade e capital do Havaí, Honolulu, que abriga a praia de Waikiki, em formato de lua crescente, e os memoriais da Segunda Guerra Mundial, em Pearl Harbor.",
+      "descricaoCurta": "Paraíso tropical com praias deslumbrantes e vulcões impressionantes.",
+      "imagem": "fotohavai.png",
+      "destaque": true,
+      "visitado": false,
+      "avaliacoes": [
+        {
+          "nome": "Ana",
+          "rating": 5,
+          "comentario": "O lugar mais lindo que já visitei! As praias são de outro mundo.",
+          "data": "2025-01-05T00:00:00.000Z"
+        },
+        {
+          "nome": "Pedro",
+          "rating": 4,
+          "comentario": "Experiência incrível, mas um pouco caro.",
+          "data": "2025-03-22T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Fernando de Noronha",
+      "cidade": "Fernando de Noronha",
+      "estado": "PE",
+      "pais": "Brasil",
+      "preco": 3999.99,
+      "descricao": "Fernando de Noronha é um arquipélago vulcânico situado a cerca de 350 quilômetros ao largo da costa nordeste do Brasil. É conhecido pelas praias imaculadas, paisagens diversificadas e vida marinha abundante, sendo um destino popular para mergulho e observação de golfinhos. A maior parte do arquipélago faz parte de um parque nacional marinho, com trilhas ecológicas que passam por áreas de preservação ambiental.",
+      "descricaoCurta": "Paraíso ecológico com algumas das melhores praias do Brasil.",
+      "imagem": "fotofernandodenoronha.png",
+      "destaque": false,
+      "visitado": true,
+      "avaliacoes": [
+        {
+          "nome": "Luiza",
+          "rating": 5,
+          "comentario": "Lugar paradisíaco! Mergulho com tartarugas foi inesquecível.",
+          "data": "2025-04-18T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Nova York",
+      "cidade": "Nova York",
+      "estado": "NY",
+      "pais": "Estados Unidos",
+      "preco": 3299.99,
+      "descricao": "Nova York compreende 5 distritos situados no encontro do rio Hudson com o Oceano Atlântico. No centro da cidade fica Manhattan, um distrito com alta densidade demográfica que está entre os principais centros comerciais, financeiros e culturais do mundo. Entre seus pontos emblemáticos, destacam-se arranha-céus, como o Empire State Building, e o enorme Central Park. O teatro da Broadway fica em meio às luzes de neon da Times Square.",
+      "descricaoCurta": "A cidade que nunca dorme, cheia de energia e diversidade.",
+      "imagem": "fotoestatuadaliberdade.png",
+      "destaque": false,
+      "visitado": false,
+      "avaliacoes": []
+    },
+    {
+      "id": 6,
+      "nome": "Gramado",
+      "cidade": "Gramado",
+      "estado": "RS",
+      "pais": "Brasil",
+      "preco": 1999.99,
+      "descricao": "Gramado é uma cidade com uma paisagem de montanhas na Serra Gaúcha. Ela é conhecida por suas influências alemãs, como chalés alpinos, chocolates artesanais e lojas de artesanato. Avenidas arborizadas contornam o Lago Negro, que é cercado por floresta e oferece pedalinhos. No inverno, o Natal Luz atrai multidões com suas exibições de luzes e festivais. O Hollywood Dream Cars exibe veículos clássicos e o Museu de Cera Dreamland apresenta celebridades em forma de esculturas.",
+      "descricaoCurta": "Pedaço da Europa no Brasil, com clima aconchegante e arquitetura charmosa.",
+      "imagem": "fotogramado.png",
+      "destaque": false,
+      "visitado": false,
+      "avaliacoes": []
+    },
+    {
+      "id": 7,
+      "nome": "Sidney",
+      "cidade": "Sidney",
+      "pais": "Austrália",
+      "preco": 4599.99,
+      "descricao": "Sydney, capital do estado de Nova Gales do Sul e uma das maiores cidades da Austrália, é especialmente conhecida pela Sydney Opera House, com seu design característico de conchas. O enorme Porto Darling e o porto de Circular Quay são o centro da vida à beira-mar. A imponente Sydney Tower tem o Skywalk, uma plataforma de observação com vista de 360 graus da cidade e dos subúrbios.",
+      "descricaoCurta": "Cidade vibrante com arquitetura icônica e praias deslumbrantes.",
+      "imagem": "fotosidney.png",
+      "destaque": false,
+      "visitado": false,
+      "avaliacoes": []
+    },
+    {
+      "id": 8,
+      "nome": "Marrocos",
+      "cidade": "Marrakech",
+      "pais": "Marrocos",
+      "preco": 2899.99,
+      "descricao": "Marrocos, um país norte-africano que margeia o Oceano Atlântico e o Mar Mediterrâneo, distingue-se pela cultura islâmica, pela arquitetura mouro e pelo relevo montanhoso. Marrakech, uma das cidades imperiais, é um labirinto de mercados movimentados (souks), praças que fervilham de atividades e ruínas de palácios. A mesquita Koutoubia, do século XII, é um monumento emblemático com um minarete imponente que domina a paisagem da cidade.",
+      "descricaoCurta": "Terra de contrastes, com cidades medievais, desertos e montanhas.",
+      "imagem": "fotomarrocos.png",
+      "destaque": false,
+      "visitado": false,
+      "avaliacoes": []
+    },
+    {
+      "id": 9,
+      "nome": "Chile",
+      "cidade": "Santiago",
+      "pais": "Chile",
+      "preco": 2299.99,
+      "descricao": "O Chile é um país longo e estreito que se estende pelo extremo oeste da América do Sul, com mais de 6.000 km de costa ao longo do Oceano Pacífico. Santiago, sua capital, fica em um vale cercado pelos Andes e pela Cordilheira da Costa. Na praça central Plaza de Armas, fica a catedral neoclássica e o Museu de História Nacional. O enorme Parque Metropolitano tem piscinas, um jardim botânico e um zoológico.",
+      "descricaoCurta": "País de paisagens extremas, do deserto mais árido às geleiras milenares.",
+      "imagem": "fotochile.png",
+      "destaque": false,
+      "visitado": false,
+      "avaliacoes": []
+    },
+    {
+      "id": 10,
+      "nome": "Veneza",
+      "cidade": "Veneza",
+      "pais": "Itália",
+      "preco": 3799.99,
+      "descricao": "Veneza, a capital da região de Vêneto, no norte da Itália, é formada por mais de 100 pequenas ilhas em uma lagoa no Mar Adriático. A cidade não tem estradas, apenas canais (como a via Grand Canal), repletos de palácios góticos e renascentistas. Na praça central, Piazza San Marco, ficam a Basílica de São Marcos, coberta de mosaicos bizantinos, e o campanário, com vista para os telhados vermelhos da cidade.",
+      "descricaoCurta": "Cidade romântica construída sobre canais, com arquitetura deslumbrante.",
+      "imagem": "fotovenesa.png",
+      "destaque": false,
+      "visitado": false,
+      "avaliacoes": []
+    },
+    {
+      "id": 11,
+      "nome": "Torre de Pisa",
+      "cidade": "Pisa",
+      "pais": "Itália",
+      "preco": 2599.99,
+      "descricao": "A Torre de Pisa é um campanário (torre sineira independente ou anexa a uma igreja ou catedral) da catedral da cidade italiana de Pisa. Está situada atrás da catedral e é a terceira mais antiga estrutura na praça da Catedral de Pisa (Campo dei Miracoli), depois da catedral e do baptistério. A torre inclinada de Pisa é um dos monumentos mais famosos do mundo, principalmente devido à sua inclinação involuntária.",
+      "descricaoCurta": "Ícone arquitetônico famoso por sua inclinação peculiar.",
+      "imagem": "fototorrepiza.png",
+      "destaque": false,
+      "visitado": false,
+      "avaliacoes": []
+    },
+    {
+      "id": 12,
+      "nome": "Salvador",
+      "cidade": "Salvador",
+      "estado": "BA",
+      "pais": "Brasil",
+      "preco": 1799.99,
+      "descricao": "Salvador, a capital do estado da Bahia no nordeste do Brasil, é conhecida pela arquitetura colonial portuguesa, pela cultura afrobrasileira e pelo litoral tropical. O bairro do Pelourinho é seu coração histórico, com vielas de paralelepípedo terminando em praças grandes, prédios coloridos e igrejas barrocas, como São Francisco, com trabalhos em madeira revestidos com ouro.",
+      "descricaoCurta": "Capital da alegria com riqueza cultural e histórica impressionante.",
+      "imagem": "fotosalvador.png",
+      "destaque": false,
+      "visitado": false,
+      "avaliacoes": []
+    },
+    {
+      "id": 13,
+      "nome": "Pernambuco",
+      "cidade": "Recife",
+      "estado": "PE",
+      "pais": "Brasil",
+      "preco": 1599.99,
+      "descricao": "Pernambuco é um estado no nordeste do Brasil, no Oceano Atlântico. Sua capital, Recife, tem uma paisagem urbana marcada por rios, pontes, ilhéus e penínsulas. O Recife Antigo, no porto da cidade, é o centro histórico com arquitetura colonial, lojas de artesanato e o Instituto Ricardo Brennand, que exibe artefatos históricos e obras de arte em um complexo de edifícios em estilo mourisco.",
+      "descricaoCurta": "Terra do frevo e do maracatu, com praias paradisíacas e cultura vibrante.",
+      "imagem": "fotopernambuco.png",
+      "destaque": false,
+      "visitado": false,
+      "avaliacoes": []
+    },
+    {
+      "id": 14,
+      "nome": "Ouro Preto",
+      "cidade": "Ouro Preto",
+      "estado": "MG",
+      "pais": "Brasil",
+      "preco": 1299.99,
+      "descricao": "Ouro Preto é uma cidade colonial na Serra do Espinhaço, no leste do Brasil. É conhecida pela arquitetura barroca, que inclui pontes, fontes e praças, e pelas ruas de paralelepípedo íngremes e sinuosas. A praça central, Tiradentes, homenageia o mártir da independência brasileira. Há diversas igrejas e capelas do século XVIII, como a Igreja de São Francisco de Assis, com trabalhos do escultor Aleijadinho.",
+      "descricaoCurta": "Cidade histórica que preserva o melhor do barroco brasileiro.",
+      "imagem": "fotoouropreto.png",
+      "destaque": false,
+      "visitado": false,
+      "avaliacoes": []
+    }
+  ]
+}

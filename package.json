@@ -1,0 +1,40 @@
+{
+  "name": "aeronautas-viagens",
+  "version": "1.0.0",
+  "description": "Projeto de site de viagens com cadastro de destinos turísticos utilizando JSON Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch ./db/db.json --port 3000",
+    "dev": "json-server --watch ./db/db.json --port 3000 & open http://localhost:3000/public/index.html",
+    "prettier": "prettier --write .",
+    "lint": "eslint .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.0"
+  },
+  "keywords": [
+    "viagens",
+    "turismo",
+    "destinos",
+    "json-server",
+    "diw",
+    "pucminas"
+  ],
+  "author": "Mateus Esteves Reis <mateus.esteves@pucminas.br>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mateusestevesreis/aeronautas-viagens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mateusestevesreis/aeronautas-viagens/issues"
+  },
+  "homepage": "https://github.com/mateusestevesreis/aeronautas-viagens#readme"
+}
